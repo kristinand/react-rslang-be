@@ -18,7 +18,8 @@ const User = new Schema(
       minlength: 8
     },
     photo: {
-      type: String
+      type: String,
+      required: false
     }
   },
   { collection: 'users' }
