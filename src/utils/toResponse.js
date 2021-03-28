@@ -6,7 +6,7 @@ const addMethods = schema => {
     delete rest.password;
     delete rest.__v;
     delete rest.userId;
-    return { id: _id, ...rest };
+    return { _id, ...rest };
   });
 };
 
